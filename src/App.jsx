@@ -26,8 +26,6 @@ export default function App() {
         {t.actions.skipToContent}
       </a>
       <Navbar />
-      {/* key={lang} remounts content on language switch: quick fade-slide,
-          staggered reveals replay, scroll position is preserved. */}
       <main id="main" key={lang} className="lang-swap">
         <Hero />
         <About />

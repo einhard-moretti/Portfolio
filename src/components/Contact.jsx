@@ -1,6 +1,6 @@
-import { Facebook, Globe, Mail, MapPin } from "lucide-react";
+import { Facebook, Globe, Mail } from "lucide-react";
 import { useApp } from "../context/AppContext.jsx";
-import { channels, pick, profile } from "../data/profile.js";
+import { channels, profile } from "../data/profile.js";
 import { TikTokIcon, WhatsAppIcon } from "./icons.jsx";
 import Section from "./Section.jsx";
 import Reveal from "./Reveal.jsx";
@@ -39,7 +39,7 @@ function RowShell({ children }) {
 }
 
 export default function Contact() {
-  const { lang, t } = useApp();
+  const { t } = useApp();
   const meta = t.sections.contact;
 
   const digits = profile.phoneHref.replace(/\D/g, "");

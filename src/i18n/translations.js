@@ -51,10 +51,8 @@ export const translations = {
         eyebrow: "Get in Touch", title: "Let's Connect",
         body: "Have an opportunity or want to work together? Reach me through any of these.",
         links: "Contact Links",
-        location: "Location",
       },
     },
-    footer: { rights: "All rights reserved." },
   },
 
   id: {
@@ -109,9 +107,7 @@ export const translations = {
         eyebrow: "Hubungi Saya", title: "Mari Terhubung",
         body: "Punya peluang atau ingin bekerja sama? Hubungi saya lewat salah satu jalur ini.",
         links: "Saluran Kontak",
-        location: "Lokasi",
       },
     },
-    footer: { rights: "Hak cipta dilindungi." },
   },
 };

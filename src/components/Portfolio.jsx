@@ -4,9 +4,6 @@ import { pick, projects } from "../data/profile.js";
 import Section from "./Section.jsx";
 import Reveal from "./Reveal.jsx";
 
-// Natural-ratio cover: the screenshot itself determines the height —
-// w-full h-auto block, no forced aspect, no contain letterboxing, no crop.
-// Only the fallback (no image) keeps a fixed aspect so the gradient has form.
 function Cover({ project }) {
   if (project.image) {
     return (
@@ -22,8 +19,6 @@ function Cover({ project }) {
   );
 }
 
-// Editorial project: image, metadata, title, one description, stack, link.
-// No problem/outcome sections, no decorative index or year.
 function Project({ project }) {
   const { lang, t } = useApp();
 
@@ -65,7 +60,6 @@ function Project({ project }) {
   );
 }
 
-// Two-column portfolio grid. Mobile collapses to one column.
 export default function Portfolio() {
   const { t } = useApp();
   const meta = t.sections.portfolio;

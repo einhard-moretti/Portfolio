@@ -12,16 +12,11 @@ export const profile = {
     id: "Saya adalah pencari kerja yang siap belajar, beradaptasi, dan mengambil peluang baru.",
   },
   email: "666einhard@gmail.com",
-  phone: "+62 896 6261 9456", // displayed text
+  phone: "+62 896 6261 9456",
   phoneHref: "+6289662619456",
-  photo: "",
-  video: "public/images/FangYuan.mp4",
-  mapsUrl: "",
+  video: "/images/FangYuan.mp4",
 };
 
-// Contact channels rendered ONLY in the Contact section, in this order.
-// WhatsApp and Gmail rows derive from phoneHref / email automatically.
-// `id` picks the icon (tiktok | facebook); unknown ids fall back to a globe.
 export const channels = [
   { id: "tiktok", label: "TikTok", display: "@666einhard", url: "https://www.tiktok.com/@666einhard" },
   { id: "facebook", label: "Facebook", display: "Einhard Wayne", url: "https://www.facebook.com/share/19B9M1qDYP/" },
@@ -58,8 +53,6 @@ export const about = {
   },
 };
 
-// Labels resolve from translations via `key`. Contact details (phone, email)
-// live only in the Contact section; the full name lives only in the Hero.
 export const personalInfo = [
   { key: "birth", value: "Bojonegoro, 19 November 2003" },
   { key: "domicile", value: "Jawa Timur, Kab. Gresik, Ds. Banjarsari" },
@@ -122,7 +115,6 @@ export const education = [
   },
 ];
 
-// Work, internship, freelance, organization, or academic project. Most recent first.
 export const experience = [
   {
     role: {
@@ -130,7 +122,7 @@ export const experience = [
       id: "Picker",
     },
     org: "J&T Express",
-    period: "1 Month",
+    period: { en: "1 Month", id: "1 Bulan" },
     location: {
       en: "Surabaya",
       id: "Surabaya",
@@ -155,7 +147,7 @@ export const experience = [
       id: "Pekerja Produksi",
     },
     org: "PT. Rackindo Sejahtera",
-    period: "2 Months",
+    period: { en: "2 Months", id: "2 Bulan" },
     location: {
       en: "Gresik",
       id: "Gresik",
@@ -180,7 +172,7 @@ export const experience = [
       id: "Pekerja Gudang",
     },
     org: "PT. Rackindo Sejahtera",
-    period: "4 Months",
+    period: { en: "4 Months", id: "4 Bulan" },
     location: {
       en: "Gresik",
       id: "Gresik",
@@ -292,8 +284,6 @@ export const skillGroups = [
   },
 ];
 
-// First entry renders as the featured project, the rest as a compact grid.
-// Set url to "" to hide the link. Empty array shows a guidance note.
 export const projects = [
   {
     name: "Financial Tracker",
@@ -313,8 +303,7 @@ export const projects = [
       "SQLite",
       "Tailwind CSS",
     ],
-    url: "",
-    image: "public/images/Dashboard.png",
+    image: "/images/Dashboard.png",
   },
 
   {
@@ -334,8 +323,7 @@ export const projects = [
       "Next.js",
       "Tailwind CSS",
     ],
-    url: "",
-    image: "public/images/Panel.png",
+    image: "/images/Panel.png",
   },
   {
     name: "Wraith",
@@ -354,8 +342,7 @@ export const projects = [
       "API Integration",
       "Automation",
     ],
-    url: "",
-    image: "public/images/Wraith.jpg",
+    image: "/images/Wraith.jpg",
   },
 ];
 
@@ -404,7 +391,6 @@ export const strengths = [
   },
 ];
 
-// Honest, low-drama. "how" and "progress" render as one flowing paragraph.
 export const improvements = [
   {
     area: {

@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-// Cycles through the profession words with a soft fade-up swap.
-// Static first word under prefers-reduced-motion. Interval, not scroll-driven.
 export default function RotatingText({ words }) {
   const [index, setIndex] = useState(0);
 

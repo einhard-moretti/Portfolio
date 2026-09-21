@@ -2,15 +2,8 @@ import { useApp } from "../context/AppContext.jsx";
 
 const OPTIONS = ["en", "id"];
 
-// Locked literal gray — deliberately NOT a theme variable. A fixed value has
-// nothing to transition, so the border never flickers during theme switches,
-// spam-proof by construction. Tradeoff accepted: one compromise tone for
-// both themes.
 const BORDER = "border-[#454A52]";
 
-// Fixed-size segmented control: 76x36px in both languages. Indicator slides
-// via transform — the container never resizes, so nothing in the navbar can
-// shift on language switch.
 export default function LangToggle() {
   const { lang, setLang, t } = useApp();
 

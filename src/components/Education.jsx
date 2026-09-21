@@ -3,8 +3,6 @@ import { education, pick } from "../data/profile.js";
 import Section from "./Section.jsx";
 import Reveal from "./Reveal.jsx";
 
-// Editorial timeline: year as the anchor column, whitespace between entries.
-// No vertical line, no dots, no boxes.
 export default function Education() {
   const { lang, t } = useApp();
   const meta = t.sections.education;

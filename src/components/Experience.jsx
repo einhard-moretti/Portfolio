@@ -15,7 +15,7 @@ export default function Experience() {
             <Reveal delay={index * 80}>
               <div className="grid gap-2 sm:grid-cols-[9rem_1fr] sm:gap-8">
                 <p className="font-mono text-sm leading-6 text-muted">
-                  {meta.worked.replace("{duration}", job.period)}
+                  {meta.worked.replace("{duration}", pick(job.period, lang))}
                 </p>
                 <div>
                   <p className="text-lg font-medium leading-snug">

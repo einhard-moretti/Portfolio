@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-// Two-way reveal: animates in on viewport entry, resets on exit, and plays
-// again on every pass — scrolling down or up. Reduced motion renders static.
 export default function useReveal(threshold = 0.05) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);

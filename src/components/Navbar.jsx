@@ -11,8 +11,6 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
 
-  // Scroll spy — IntersectionObserver, no scroll listeners.
-  // Re-runs on language change: <main> remounts, so section nodes are replaced.
   useEffect(() => {
     const sections = nav.map((item) => document.getElementById(item.id)).filter(Boolean);
     const io = new IntersectionObserver(
@@ -34,9 +32,6 @@ export default function Navbar() {
     };
   }, [open]);
 
-  // Layout: menu anchored left, flexible middle, controls right. Ghost
-  // labels keep every item's box language-invariant. No CV action — removed
-  // by design decision; navigation and toggles only.
   return (
     <header className="nav-in sticky top-0 z-50 bg-base/80 backdrop-blur">
       <nav

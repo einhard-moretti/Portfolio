@@ -1,6 +1,3 @@
-// Brand glyphs from simple-icons (24x24, fill = currentColor). Lucide has no
-// WhatsApp or TikTok marks. API-compatible with lucide icons (size, className)
-// so they drop into the same row components.
 export function WhatsAppIcon({ size = 18, className = "" }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">

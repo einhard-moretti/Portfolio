@@ -37,7 +37,6 @@ export function AppProvider({ children }) {
     localStorage.setItem(LANG_KEY, lang);
   }, [lang]);
 
-  // Cross-fade: enable color transitions only for the duration of the switch.
   const toggleTheme = useCallback(() => {
     const root = document.documentElement;
     root.classList.add("theme-switch");

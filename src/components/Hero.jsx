@@ -4,16 +4,12 @@ import { profile, pick } from "../data/profile.js";
 import Reveal from "./Reveal.jsx";
 import RotatingText from "./RotatingText.jsx";
 
-// Hero media priority: video loop > portrait photo > abstract composition.
-// All three share the same glow halo so the identity stays consistent.
 function HeroMedia() {
   const videoRef = useRef(null);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-    // Enforce muted before play (autoplay eligibility), and honor reduced
-    // motion by pausing the loop on its first frame.
     video.muted = true;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       video.pause();
@@ -68,8 +64,6 @@ function HeroMedia() {
   );
 }
 
-// Editorial hero — identity and introduction only. Navigation and CV live in
-// the sticky navbar.
 export default function Hero() {
   const { lang, t } = useApp();
   const roles = profile.roles[lang];
