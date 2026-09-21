@@ -30,7 +30,7 @@ export default function Navbar() {
       <header className="nav-in sticky top-0 z-50 bg-base sm:bg-base/80 sm:backdrop-blur">
         <nav
           aria-label="Primary"
-          className="mx-auto grid h-16 w-full max-w-6xl grid-cols-[auto_1fr_auto] items-center gap-4 px-5 sm:px-8"
+          className="mx-auto flex h-16 w-full max-w-6xl items-center justify-end gap-4 px-5 sm:px-8 lg:grid lg:grid-cols-[auto_1fr_auto]"
         >
           <ul className="hidden items-center gap-5 xl:gap-7 lg:flex">
             {nav.map((item) => (
