@@ -7,7 +7,7 @@ export default function Reveal({ children, delay = 0, className = "" }) {
     <div
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-700 ease-smooth will-change-transform ${
+      className={`transition-[opacity,transform] duration-700 ease-smooth ${
         visible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
       } ${className}`}
     >

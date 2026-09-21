@@ -24,7 +24,7 @@ function HeroMedia() {
           ref={videoRef}
           src={profile.video}
           poster={profile.photo || undefined}
-          className="card-shadow relative aspect-[4/5] w-full rounded-[2rem] object-cover"
+          className="card-shadow relative aspect-[4/5] w-full rounded-[2rem] object-cover transform-gpu"
           autoPlay
           loop
           muted
@@ -90,7 +90,7 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={240} className="hidden lg:block">
+        <Reveal delay={240}>
           <HeroMedia />
         </Reveal>
       </div>
