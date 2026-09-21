@@ -36,7 +36,7 @@ export const translations = {
       skills: { number: "05", eyebrow: "Skills", title: "What I Work With" },
       portfolio: {
         number: "06", eyebrow: "Selected Work", title: "Projects",
-        intro: "Personal, academic, client, work with the problem each one solves.",
+        intro: "Personal, academic, and client projects.",
         emptyTitle: "No projects published yet.",
         emptyBody: "Fill the projects array in src/data/profile.js, the first entry becomes the featured project.",
       },
@@ -92,7 +92,7 @@ export const translations = {
       skills: { number: "05", eyebrow: "Keahlian", title: "Yang Saya Gunakan" },
       portfolio: {
         number: "06", eyebrow: "Karya Terpilih", title: "Proyek",
-        intro: "Proyek pribadi, akademik, klien, beserta masalah yang diselesaikannya.",
+        intro: "Proyek pribadi, akademik, dan klien.",
         emptyTitle: "Belum ada proyek yang ditayangkan.",
         emptyBody: "Isi array projects di src/data/profile.js, entri pertama menjadi proyek utama.",
       },
