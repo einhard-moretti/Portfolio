@@ -20,4 +20,6 @@ export default function useReveal() {
     io.observe(el);
     return () => io.disconnect();
   }, []);
+
+  return { ref, visible };
 }
