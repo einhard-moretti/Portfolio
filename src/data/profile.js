@@ -12,8 +12,8 @@ export const profile = {
     id: "Saya adalah pencari kerja yang siap belajar, beradaptasi, dan mengambil peluang baru.",
   },
   email: "666einhard@gmail.com",
-  phone: "+62 896 6261 9456",
-  phoneHref: "+6289662619456",
+  phone: "+62 821 3659 900",
+  phoneHref: "+628213659900",
   video: "/images/FangYuan.mp4",
 };
 
@@ -314,8 +314,8 @@ export const projects = [
       id: "Developer Solo",
     },
     description: {
-      en: "A web-based monitoring dashboard designed to present operational information and status data through a clear and structured interface.",
-      id: "Dashboard monitoring berbasis web yang dirancang untuk menampilkan informasi operasional dan data status melalui antarmuka yang jelas dan terstruktur.",
+      en: "A centralized web platform for managing and monitoring multiple cloudphones. It provides a unified interface for device management, status monitoring, and cloudphone operations, with license-based access to management features.",
+      id: "Sebuah platform web terpusat untuk mengelola dan memantau banyak cloudphone. Platform ini menyediakan antarmuka terpadu untuk manajemen perangkat, pemantauan status, dan operasional cloudphone, dengan akses fitur berbasis lisensi.",
     },
     stack: [
       "JavaScript",
@@ -324,25 +324,6 @@ export const projects = [
       "Tailwind CSS",
     ],
     image: "/images/Panel.png",
-  },
-  {
-    name: "Wraith",
-    year: "2026",
-    role: {
-      en: "Solo Developer",
-      id: "Developer Solo",
-    },
-    description: {
-      en: "An automated Discord-based store system for managing digital game-item orders. The bot handles product listings, order processing, and payment verification using in-game items, reducing the need for manual store management.",
-      id: "Sistem toko berbasis Discord yang digunakan untuk mengelola pesanan item game secara otomatis. Bot menangani daftar produk, proses pesanan, dan verifikasi pembayaran menggunakan item dalam game sehingga mengurangi kebutuhan pengelolaan toko secara manual.",
-    },
-    stack: [
-      "Lua",
-      "Discord Bot",
-      "API Integration",
-      "Automation",
-    ],
-    image: "/images/Wraith.jpg",
   },
 ];
 
